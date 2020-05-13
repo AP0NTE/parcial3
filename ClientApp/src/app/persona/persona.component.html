@@ -1,0 +1,15 @@
+<div class="Estudiante">
+    <h1>Registrar persona</h1>
+    <label ><a><i class="fa fa-envelope"></i> Identificacion</a></label><input [(ngModel)]="persona.identificacion" [ngModelOptions]="{standalone: true}" type="text" placeholder="identificacion" name="identificacion" required>
+    <label ><a><i class="fa fa-user"></i> Nombre</a></label><input [(ngModel)]="persona.nombre" [ngModelOptions]="{standalone: true}" type="text" placeholder="Nombre" name="nombre" required>
+    <label ><a><i class="fa fa-user"></i> Apellidos</a></label><input [(ngModel)]="persona.apellido" [ngModelOptions]="{standalone: true}" type="text" placeholder="apellidos" name="apellidos" required>
+    <label ><a><i class="fa fa-user"></i> Sexo</a></label><input [(ngModel)]="persona.sexo" [ngModelOptions]="{standalone: true}" type="text" placeholder="sexo" name="sexo" required>
+    <label ><a><i class="fa fa-unlock-alt"></i> Edad</a></label><input [(ngModel)]="persona.edad" [ngModelOptions]="{standalone: true}" type="password" placeholder="edad" name="edad" required>
+    <label ><a><i class="fa fa-calendar"></i> Departamento</a></label><input [(ngModel)]="persona.departamento" [ngModelOptions]="{standalone: true}" type="text" name="departamento">
+    <label ><a><i class="fa fa-calendar"></i> Ciudad</a></label><input [(ngModel)]="persona.ciudad" [ngModelOptions]="{standalone: true}" type="text" name="ciudad">
+    <label ><a><i class="fa fa-calendar"></i> Alimento</a></label><input [(ngModel)]="persona.elimentario" [ngModelOptions]="{standalone: true}" type="text" name="alimentario">
+    <label ><a><i class="fa fa-calendar"></i> Valor</a></label><input [(ngModel)]="persona.valor" [ngModelOptions]="{standalone: true}" type="number" name="valor">
+    
+    <button (click)="add()" class="fa fa-folder"> Archivar</button>
+    <button routerLink="/tabla" class="fa fa-folder"> Ver tabla</button>
+</div>

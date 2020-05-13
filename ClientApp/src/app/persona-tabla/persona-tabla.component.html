@@ -1,0 +1,28 @@
+<input type="text" id="myInput"  placeholder="Buscar.." name="filtro"[(ngModel)]='filtro'>
+  <table >
+    <tr>
+      <th>Id</th>
+      <th>identificacion</th>
+      <th>nombre</th>
+      <th>apellido</th>
+      <th>Sexo</th>
+      <th>edad</th>
+      <th>departamento</th>
+      <th>ciudad</th>
+      <th>alimentario</th>
+      <th>valor</th>
+    </tr>
+    <tr *ngFor="let persona of persona|filtroPersona:filtro">
+      <td>{{persona.id}}</td>
+      <td>{{persona.identificacion}}</td>
+      <td>{{persona.nombre}}</td>
+      <td>{{persona.apellido}}</td>
+      <td>{{persona.sexo}}</td>
+      <td>{{persona.edad}}</td>
+      <td>{{persona.departamento}}</td>
+      <td>{{persona.ciudad}}</td>
+      <td>{{persona.estado}}</td>
+      <td>{{persona.alimentario}}</td>
+      <td>{{persona.valor}}</td>
+    </tr>
+  </table></div>
